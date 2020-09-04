@@ -187,7 +187,6 @@ body {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  /* padding-top: 200px; */
   width: 696px;
 
   font-weight: 900;
@@ -200,7 +199,6 @@ body {
 
 /* button */
 .button {
-  /* margin-bottom: 210px; */
   display: inline-block;
   min-width: 136px;
   padding: 10px 32px;
@@ -388,11 +386,13 @@ body {
   background-color: var(--white);
 }
 
-.social-icon-link:hover .social-icon {
+.social-icon-link:hover .social-icon,
+.social-icon-link:focus .social-icon {
   fill: var(--white);
 }
 
-.social-icon-link:hover {
+.social-icon-link:hover,
+.social-icon-link:focus {
   background-color: var(--blue);
 }
 .social-icon {
@@ -421,15 +421,21 @@ body {
   border-radius: 4px;
 }
 
-.clients-logo-link:hover .clients-logo {
+.clients-logo-link:hover .clients-logo,
+.clients-logo-link:focus .clients-logo {
   fill: var(--blue);
 }
 
-.clients-logo-link:hover {
+.clients-logo-link:hover,
+.clients-logo-link:focus {
   border: 1px solid var(--blue);
 }
 
 /* address */
+.footer-flex {
+  display: flex;
+}
+
 .contacts-container {
   background-color: var(--herro-background);
   color: var(--white);
@@ -442,11 +448,15 @@ body {
   height: 252px;
 }
 
+.footer-address {
+  margin-right: 70px;
+}
+
 .footer {
   display: block;
   margin-right: 0;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .adress-content {
@@ -459,7 +469,7 @@ body {
 .adress-content .text {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .contacts-container .connection {
@@ -469,6 +479,28 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   font-style: normal;
+}
+.footer-slogan .social-icon-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-slogan .social-icon-link:hover {
+  background-color: var(--blue);
+}
+
+.footer-slogan .social-icon {
+  fill: var(--white);
+}
+
+.footer-slogan-text {
+  margin-top: 72px;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 /*portfolio.html*/
