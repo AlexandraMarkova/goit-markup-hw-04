@@ -116,6 +116,10 @@ body {
   margin-right: 50px;
 }
 
+.auht-nav .item {
+  text-align: center;
+}
+
 .auht-nav .link {
   font-weight: 500;
   color: var(--gray-one);
@@ -127,6 +131,35 @@ body {
 .auht-nav .link:hover,
 .auht-nav .link:focus {
   color: var(--blue);
+}
+
+.auht-nav .link:hover .nav-icon-envelope,
+.auht-nav .link:focus .nav-icon-envelope {
+  fill: var(--blue);
+}
+
+.nav-icon-envelope {
+  display: inline-flex;
+  vertical-align: middle;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--gray-one);
+  text-align: center;
+}
+
+.nav-icon-smartphone {
+  display: inline-flex;
+  vertical-align: middle;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--gray-one);
+}
+
+.auht-nav .link:hover .nav-icon-smartphone,
+.auht-nav .link:focus .nav-icon-smartphone {
+  fill: var(--blue);
 }
 
 /* herro */
