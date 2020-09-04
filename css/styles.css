@@ -368,6 +368,34 @@ body {
   fill: #afb1b8;
 }
 
+/* Постоянные клиенты */
+.clients-logo-list {
+  display: flex;
+}
+
+.clients-logo-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-logo-link {
+  fill: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-logo-link:hover .clients-logo {
+  fill: var(--blue);
+}
+
+.clients-logo-link:hover {
+  border: 1px solid var(--blue);
+}
+
 /* address */
 .contacts-container {
   background-color: var(--herro-background);
